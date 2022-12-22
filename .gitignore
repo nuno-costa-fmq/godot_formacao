@@ -1,0 +1,5 @@
+
+fmq_godot_project/assets/graphics/messages/.DS_Store
+
+# ignore all SD_Store
+*.DS_Store
