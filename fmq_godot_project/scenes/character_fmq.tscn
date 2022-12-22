@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/graphics/characters/character_fmq.png" type="Texture" id=1]
+
+[node name="character_fmq" type="RigidBody2D"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2( -46, -38 )
+polygon = PoolVector2Array( 77, 75, 13, 76, 13, 72.3375, 13, 71, 12, 70, 10.4676, 65.8706, 9, 60, 6, 60, 4.21801, 57.624, 4, 53, 7.72578, 44.617, 7.45037, 41.8015, -1, 8, 3, 7, 3.54687, 7.54687, 11, 39, 13, 39, 16, 37, 14, 31, 13.4612, 26.4627, 16, 18, 19.645, 13.14, 23.6158, 9.11863, 33, 4, 39, 1, 41.8444, 0.0518713, 43, 0, 44.1589, -0.491763, 46.1175, -0.441242, 49, 1, 51, 1, 53, 3, 58.3458, 4.52736, 61.8505, 6.3218, 67, 10, 69.9469, 12.9469, 73.0607, 17.4749, 75, 22, 75, 25, 75, 31, 74, 36, 78, 38, 81, 41, 81, 42, 82, 43, 85, 45, 87, 53, 86, 55, 85.1719, 55.8281, 82.975, 57, 82, 57, 82.5688, 58.7062, 83, 60, 83, 63.7375, 81.325, 72, 80, 72, 77, 72 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( -3, 7.62939e-06 )
+scale = Vector2( 0.148728, 0.148728 )
+texture = ExtResource( 1 )
