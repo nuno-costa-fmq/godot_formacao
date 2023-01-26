@@ -16,7 +16,7 @@
 [node name="player_fmq" parent="." instance=ExtResource( 1 )]
 position = Vector2( 77, 6 )
 
-[node name="player_gamer" parent="." instance=ExtResource( 2 )]
+[node name="player_gamer_kinematic" parent="." instance=ExtResource( 2 )]
 position = Vector2( 182, 57 )
 script = ExtResource( 6 )
 
