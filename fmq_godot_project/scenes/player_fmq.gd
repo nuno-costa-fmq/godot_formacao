@@ -1,22 +1,23 @@
-extends RigidBody2D
+extends KinematicBody2D
 
-var player_name := "RU-1"
+export (int) var speed = 200
 
-var position = Vector2(1,1)
+var velocity = Vector2()
 
-var has_key : bool
-var has_crowba : bool
+#Jogador movimenta-se através do teclado
+func get_input():
+	velocity = Vector2()
+	if Input.is_action_pressed("keyboard_right"):
+		velocity.x += 1
+	if Input.is_action_pressed("keyboard_left"):
+		velocity.x -= 1
+	if Input.is_action_pressed("keyboard_down"):
+		velocity.y += 1
+	if Input.is_action_pressed("keyboard_up"):
+		velocity.y -= 1
+	velocity = velocity.normalized() * speed
 
-func _ready(): -> void:
-	if has_key:
-		#abre a porta
-	elif has crowbar:
-		#destroi o cofre
-	else:
-		#nada acontece
-
-#onready var audio_stream : AudioStreamPlayer2D = $"AudioStreamPlayer"
-
-#func _ready(): -> void:
-#	audio_stream.play()
+func _physics_process(delta):
+	get_input()
+	velocity = move_and_slide(velocity)
 	
