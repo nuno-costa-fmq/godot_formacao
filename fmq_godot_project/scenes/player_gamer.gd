@@ -7,6 +7,7 @@ export (int) var speed = 200
 onready var target = position
 var velocity = Vector2()
 
+#Jogador movimenta-se através do rato (clique botão esquerdo)
 func _input(event):
 	if event.is_action_pressed("mouse_click_left"):
 		target = get_global_mouse_position()
