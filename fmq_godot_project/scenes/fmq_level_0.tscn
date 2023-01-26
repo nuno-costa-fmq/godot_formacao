@@ -22,7 +22,7 @@ script = ExtResource( 7 )
 position = Vector2( 220, 210 )
 script = ExtResource( 6 )
 
-[node name="object_game_over" parent="." instance=ExtResource( 5 )]
+[node name="object_kick_out" parent="." instance=ExtResource( 5 )]
 position = Vector2( 0, -191 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
