@@ -14,3 +14,11 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
+
+
+func _on_object_kick_out_body_entered(body):
+	$"kick_out_win_sound".play()
+
+
+func _on_AudioStreamPlayer_finished():
+	pass # Replace with function body.
