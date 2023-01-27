@@ -8,11 +8,11 @@ extents = Vector2( 256, 256 )
 
 [node name="background_floor" type="StaticBody2D"]
 
-[node name="CollisionShape2D_floor" type="CollisionShape2D" parent="."]
+[node name="collision_floor" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
 disabled = true
 
-[node name="Sprite_floor" type="TextureRect" parent="."]
+[node name="floor_carpet" type="TextureRect" parent="."]
 margin_left = -256.0
 margin_top = -256.0
 margin_right = 256.0
@@ -23,7 +23,7 @@ texture = ExtResource( 1 )
 expand = true
 stretch_mode = 2
 
-[node name="Sprite" type="Sprite" parent="."]
+[node name="fmq_logo" type="Sprite" parent="."]
 self_modulate = Color( 1, 1, 1, 0.611765 )
 scale = Vector2( 0.175, 0.175 )
 texture = ExtResource( 2 )
